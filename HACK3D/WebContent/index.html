@@ -76,7 +76,6 @@ http://www.templatemo.com/tm-480-story
                                             <span class="box-text box-text-nav-item flexbox-center">Status of my Complaint</span>
                                         </a>
                                     </li>
-
                                 </ul>
                             </nav>    
                         </div> <!-- .header -->
@@ -149,15 +148,35 @@ http://www.templatemo.com/tm-480-story
                                 <div class="content-text">
                                    <p> SpiceJet Airways ensures utmost safety of your luggage at all times.</p>
                                    <div class="request_form">
-                                   		<div class="pnr_number">
+                                   		<div class="pnr_number" style="padding: 20px">
                                    		   <label>Enter your PNR</label>
                                    		   <input type="text" name="pnr_number"/>
                                    		</div>
-                                   		<div class="radio_button">
-                                   		 <input type="radio" name="change_addr" value="No" checked> No<br>
- 										 <input type="radio" name="change_addr" value="Yes"> Yes<br>
+                                   		<div class="radio_button" style="padding: 20px" >
+                                   		<table border="1">
+                                   		<tr>
+                                   			<td>
+                                   				Deliver baggage to default address?
+                                   			</td>
+                                   			<td colspan="2">	
+                                   				 <input type="radio" name="change_addr" value="No" checked> No
+ 						 							 <input type="radio" name="change_addr" value="Yes"> Yes
+ 										    </td>
+ 										 </tr></table>
                                    		</div>
-                                   </div>
+                                   		<div class="addr_detail" style="padding: 20px">
+                                   		<table>
+                                   		<tr style="padding-top: 15px;"><td>street</td><td> <input type="text" name="street" /></td></tr>
+                                   		<tr style="padding-top: 5px;"><td>city</td><td><input type="text" name="city" /></td></tr>
+                                   		<tr style="padding-top: 5px;"><td>zip </td><td>	<input type="text" name="zip" /></td></tr>
+                                   		<tr style="padding-top: 5px;"><td>state </td><td> <input type="text" name="state"></td></tr>
+                                   		<tr style="padding-top: 5px;"><td>country</td><td> <input type="text" name="country"></td></tr>
+                                   		</table>
+                                   		</div>
+                                   		<div class="submit_pnr request" style="padding-top: 15px;">
+                                   		<button id="submit_pnr"> Submit</button>
+                                   		</div>
+                                   </div> <!-- request_form ended-->
                                 </div>            
 
                             </section> <!-- #services -->
@@ -170,7 +189,7 @@ http://www.templatemo.com/tm-480-story
                                 </header>
                                 
                                 <div class="content-text">
-                                    <p>In felis turpis, tincidunt a odio interdum, ornare interdum magna. Proin leo tortor, adipiscing et volutpat tincidunt, imperdiet sit amet purus.
+                                    <p>Please enter the Details requested below and click <b>Get Status button below .</b>
                                     </p>
                                     <form action="index.html" method="post" class="contact-form">
 
@@ -178,15 +197,15 @@ http://www.templatemo.com/tm-480-story
                                             <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required/>
                                         </div>
                                         <div class="form-group col-xs-12 col-sm-12 col-md-6 col-lg-6 form-group-2-col-right">
-                                            <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email" required/>
+                                            <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="PNR no." required/>
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject" required/>
+                                            <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Complaint Id" required/>
                                         </div>
                                         <div class="form-group">
-                                            <textarea id="contact_message" name="contact_message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                                            <textarea id="contact_message" name="contact_message" class="form-control" rows="4" placeholder="Status" required></textarea>
                                         </div>
-                                        <button type="submit" class="btn btn-primary submit-btn">Send</button>
+                                        <button type="submit" class="btn btn-primary submit-btn">Get Status	</button>
 
                                     </form>                           
                                 </div>            
@@ -201,9 +220,9 @@ http://www.templatemo.com/tm-480-story
                 <footer class="row footer js-footer">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-                        <p class="copyright-text">Copyright &copy; 2016 Company Name 
+                        <p class="copyright-text">Copyright &copy; 2016 Spice Care 
                         
-                        | Design: <a href="http://www.templatemo.com/tm-480-story" target="_parent" title="Story Bootstrap Theme">The Story</a></p>  
+                         ..All copyrights reserved 
 
                     </div>                
                 </footer>
